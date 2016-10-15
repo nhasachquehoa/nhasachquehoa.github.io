@@ -1,0 +1,206 @@
+#channelTiles {
+    background: #fff;
+    overflow: hidden;
+}
+
+.articleTile {
+    background: #fff;
+    float: left;
+    height: 0;
+    padding-bottom: 50%;
+    position: relative;
+    width: 100%;
+}
+
+.articleTile .borderRight {
+    border-left: 1px solid #e9e9e9;
+    height: 100%;
+    right: 0;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+.articleTile .borderLeft {
+    border-left: 1px solid #e9e9e9;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+.articleTile .borderTop {
+    border-top: 1px solid #e9e9e9;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+#channelTiles .articleTile.bigBlock {
+    /*clear: left;*/
+    padding-bottom: 100%;
+}
+
+.articleTile .square {
+    position: absolute;
+}
+
+.articleTile .square img {
+    height: 100%;
+    width: 50%;
+}
+
+#channelTiles .articleTile.bigBlock .square img {
+    width: 100%;
+}
+
+.articleTile .article {
+    width: 100%;
+    float: left;
+    background-color: #ffffff;
+    font-size: 1em;
+    color: #646464;
+}
+
+.articleTile .info {
+    background-color: #fff;
+    bottom: 0;
+    left: 50%;
+    overflow: hidden;
+    padding: 15px 25px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.lt-ie8 .articleTile .info { /* IE7 */
+    overflow: hidden;
+    height: 130px;
+}
+
+#channelTiles .articleTile.bigBlock .info {
+    top: 50%;
+}
+
+.articleTile .odd {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.articleTile .article:last-child {
+    border-bottom: 0;
+}
+
+.articleTile .text {
+    color: #fff;
+    overflow: hidden;
+    max-height: 100%;
+    width: 100%;
+}
+
+.no-touch .articleTile .text {
+    text-overflow: ellipsis;
+}
+
+.articleTile .channel {
+    background: #c1beca;
+    display: inline;
+    padding: 0 5px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.articleTile .channel a,
+.articleTile .channel span {
+    color: #fff;
+    font: 11px/9px SFUHelveticaLight, Arial, sans-serif;
+}
+
+.articleTile .title a {
+    color: #003366;
+    display: inline-block;
+    font: 18px/18px SFUTradeGothic, Arial, sans-serif;
+    margin: 6px 0;
+    text-transform: uppercase;
+}
+
+.articleTile .blurb {
+    color: #404040;
+    font: 13px/13px SFUHelveticaLight, Arial, sans-serif;
+    display: none; padding:0px;
+	 margin:0px;
+}
+
+.articleTile.objectMedia .playBtn {
+    background: url('/images/icon.png') -199px -180px no-repeat;
+    height: 75px;
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    margin: -37px 0 0 -37px;
+    width: 70px;
+}
+
+.articleTile.objectMedia .playBtn a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.articleTile .delete {
+    background: #C1BECA url('/images/icon.png') -300px 0 no-repeat;
+    cursor: pointer;
+    display: block;
+    height: 16px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 16px;
+}
+
+.articleTile.bigBlock .delete {
+    top: 50%;
+}
+.articleTile:hover .delete {
+    background-color: #f40;
+}
+.articleTile:hover .delete:hover:before {
+    content: "DELETE";
+    color: #f40;
+    font-size: 10px;
+    position: absolute;
+    right: 22px;
+    top: 0;
+}
+
+.articleTile .icon {
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.articleTile.videoEnhanced .icon {
+    background: url('/images/icon.svg') no-repeat -513px 0;
+    height: 46px;
+    width: 46px;
+}
+
+
+.articleTile.outgoing .icon {
+    background: url('/images/icon.svg') no-repeat -559px 0;
+    height: 15px;
+    left: auto;
+    right: 0;
+    width: 15px;
+}
+
+#channelTiles .articleTile.outgoing.bigBlock .icon {
+    top: 50%;
+}
