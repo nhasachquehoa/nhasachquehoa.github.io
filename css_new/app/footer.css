@@ -1,0 +1,269 @@
+#footer {
+  /*background: #ebebeb;*/
+  color: #686868;
+  /*position: relative;*/
+  text-align:center;
+  padding-top:10px;
+  padding-bottom:15px;
+ 
+}
+
+@media screen and (max-width: 768px) {
+  #footer .mobileHidden {display: none !important}
+}
+
+#footer .flogo{ display:inline-block; width:70px; margin-left:40px;}
+#footer .flogo .logo {background: url("/images/icon.svg") no-repeat -38px 0;height: 38px; display:block; margin-top:0xp;vertical-align: middle;width:70px;}
+#footer .copy{ display:inline-block; float:left; margin-left:25px; margin-top:10px; font:0.80em/1.35em SFUHelveticaLight, Arial, sans-serif;}
+#footer .link{ display:inline-block; float:right; margin-top:10px; margin-right:25px;}
+#footer .link li{ list-style:none; display:inline; line-height:14px; margin-left:15px; }
+#footer .link li a{ color:#686868; text-decoration:none;font:0.80em/1.35em SFUHelveticaLight, Arial, sans-serif; }
+#footer .link li a:hover{text-decoration:underline;}
+#footer .policy{ clear:both; font-size:13px; width:100%; display:block; text-align:center; margin-top:5px;}
+ 
+#TINY #footer .flogo{ width: 70px; margin:10px auto;}
+#TINY #footer .copy{ width:100%; display:block; margin-top:0px; margin-left:5px;margin-right:5px;}
+#TINY #footer .link{ width:100%; display:block;margin-top:0px;margin-left:5px;margin-right:5px;}
+
+
+#SMALL #footer .flogo{ width: 70px; margin:10px auto;}
+#SMALL #footer .copy{ width:100%; display:block; margin-top:0px; margin-left:5px;margin-right:5px;}
+#SMALL #footer .link{ width:100%; display:block;margin-top:0px;margin-left:5px;margin-right:5px;}
+
+ 
+/*
+#footer.open .expanded {
+  display: block;
+}
+#footer .toggle {
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-transform: uppercase;
+}
+#footer .toggle .icon {
+  background: url("/images/icon.svg") -612px -42px no-repeat;
+  height: 38px;
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 38px;
+}
+#footer .toggle .tooltip {
+  line-height: 52px;
+  margin-right: 55px;
+}
+#footer .collapsed {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 17px 0 13px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+#footer .collapsed ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#footer .collapsed li {
+  display: inline;
+}
+#footer .collapsed li span {
+  background: #b3bbb9;
+  border-radius: 4px;
+  display: inline-block;
+  height: 8px;
+  margin: 0 4px;
+  width: 8px;
+  vertical-align: 1px;
+}
+#footer .collapsed a {
+  color: #b3bbb9;
+}
+#TINY #footer .collapsed {
+  font-size: 14px;
+}
+#footer .expanded {
+  background: #465866;
+  border-top: 1px solid #fff;
+  box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.4);
+  bottom: 0;
+  color: #fff;
+  display: none;
+  padding: 20px 0 0 0;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+#footer .expanded .icon {
+  background-position: -574px -42px;
+}
+#footer .expanded ul {
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#footer .expanded > ul {
+  margin: 0 40px 0 20px;
+}
+#footer .expanded li {
+  padding: 10px 0;
+}
+#footer .expanded li .title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#footer .expanded a {
+  color: #fff;
+}
+#footer .expanded a:hover {
+  border-bottom: 1px solid #fff;
+}
+#footer .expanded .newsletter {
+  max-width: 320px;
+  width: 100%;
+}
+#footer .expanded .newsletter ul {
+  max-width: 320px;
+  width: 100%;
+}
+#footer .expanded .newsletter .description {
+  margin-bottom: 20px;
+}
+#footer .expanded .newsletter .terms {
+  font-size: 11px;
+  line-height: 14px;
+  margin-top: 10px;
+}
+#footer .expanded .newsletter .success, #footer .expanded .newsletter .error {
+  margin: 10px 0;
+}
+#footer .expanded .newsletter .success .icon, #footer .expanded .newsletter .error .icon {
+  background: #390;
+  border-radius: 20px;
+  color: #fff;
+  float: left;
+  font: 30px/38px Arial, sans-serif;
+  height: 38px;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  width: 38px;
+}
+#footer .expanded .newsletter .error .icon {
+  background: #e00;
+}
+#footer .expanded .newsletter input {
+  margin: 5px 5px 0 0;
+  vertical-align: middle;
+}
+#footer .expanded .newsletter input::-webkit-input-placeholder {
+  color: #868b95;
+  font-style: italic;
+}
+#footer .expanded .newsletter input:-moz-placeholder {
+  color: #868b95;
+  font-style: italic;
+}
+#footer .expanded .newsletter input::-moz-placeholder {
+  color: #868b95;
+  font-style: italic;
+}
+#footer .expanded .newsletter input:-ms-input-placeholder {
+  color: #868b95;
+  font-style: italic;
+}
+#footer .expanded .newsletter input[type="email"] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  border: 0;
+  border-radius: 3px;
+  color: #333;
+  font: 18px/24px Arial, sans-serif;
+  height: 29px;
+  padding: 8px 10px;
+  width: 185px;
+}
+#footer .expanded .newsletter input[type="submit"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: #f40;
+  border: 2px solid #fff;
+  color: #fff;
+  font: normal 22px/22px SFUTradeGothic, "Arial Black", Arial, sans-serif;
+  height: 45px;
+  padding: 8px 20px;
+}
+#footer .expanded .newsletter input[type="submit"]:hover {
+  background: #ff7040;
+  cursor: pointer;
+}
+#TINY #footer .expanded {
+  padding: 51px 0 0 0;
+}
+#TINY #footer .expanded .toggle {
+  width: 100%;
+  text-align: right;
+}
+#TINY #footer .expanded ul {
+  margin: 0;
+  float: none;
+}
+#TINY #footer .expanded ul ul {
+  background: #374550;
+  display: none;
+}
+#TINY #footer .expanded ul ul li {
+  padding-left: 0;
+  padding-right: 0;
+}
+#TINY #footer .expanded ul.open .title:after {
+  background-position: -498px -365px;
+}
+#TINY #footer .expanded ul.open ul {
+  display: block;
+}
+#TINY #footer .expanded li {
+  padding: 0;
+}
+#TINY #footer .expanded a, #TINY #footer .expanded .title {
+  border-top: 1px solid #868b95;
+  display: block;
+  padding: 12px 20px 8px 20px;
+}
+#TINY #footer .expanded .title {
+  cursor: pointer;
+  position: relative;
+}
+#TINY #footer .expanded .title:after {
+  background: url("/images/icon.svg") no-repeat -466px -365px;
+  content: "";
+  display: block;
+  height: 15px;
+  margin: 13px;
+  width: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#TINY #footer .expanded a:hover {
+  border-bottom: 0;
+}
+#TINY #footer .expanded .newsletter {
+  max-width: none;
+}
+#TINY #footer .expanded .newsletter ul {
+  padding: 20px;
+  max-width: none;
+  width: auto;
+}
+#TINY #footer .expanded .newsletter a {
+  border: 0;
+  border-bottom: 1px solid #868b95;
+  display: inline;
+  padding: 0;
+}
+*/
