@@ -1,0 +1,559 @@
+.lt-ie8 body.rootChannel #channelTiles {
+    border-right: 0;
+}
+
+#welcomeMatAd {
+    display: none;
+}
+
+#welcomeMatContainer {
+    background-size: cover;
+    background-position: center top;
+}
+
+#welcomeMatOuter {
+    background-size: auto 260px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 900px;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    -webkit-transition: background 1s;
+    -moz-transition:    background 1s;
+    -o-transition:      background 1s;
+    transition:         background 1s;
+}
+
+.small #welcomeMatOuter {
+    min-height: 410px;
+}
+
+#welcomeMatOuter.animate {
+    background-position: center top;
+}
+
+#welcomeMatCarousel {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.channelCarousel {
+    display: none;
+    overflow: hidden;
+    padding: 1px 45px 30px 45px;
+}
+
+.carouselGradient {
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.72) 90%, rgba(0, 0, 0, 0.8) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(90%, rgba(0, 0, 0, 0.72)), color-stop(100%, rgba(0, 0, 0, 0.8))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.72) 90%, rgba(0, 0, 0, 0.8) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.72) 90%, rgba(0, 0, 0, 0.8) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.72) 90%, rgba(0, 0, 0, 0.8) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.72) 90%, rgba(0, 0, 0, 0.8) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#cc000000', GradientType=0); /* IE6-9 */
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.small .channelCarousel {
+    display: block;
+    -webkit-transition: -webkit-transform 1s ease-out 200ms;
+    -moz-transition:    -moz-transform    1s ease-out 200ms;
+    -o-transition:      -o-transform      1s ease-out 200ms;
+    -ms-transition:     -ms-transform     1s ease-out 200ms;
+    transition:         transform         1s ease-out 200ms;
+    -webkit-transform: translate3d(-1280px, 0, 0);
+    -moz-transform:    translate3d(-1280px, 0, 0);
+    -o-transform:      translate3d(-1280px, 0, 0);
+    transform:         translate3d(-1280px, 0, 0);
+}
+
+.no-csstransitions .small .channelCarousel {
+    visibility: hidden;
+}
+
+.small .animate .channelCarousel {
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform:    translate3d(0,0,0);
+    -o-transform:      translate3d(0,0,0);
+    transform:         translate3d(0,0,0);
+}
+
+.no-csstransitions .small .animate .channelCarousel {
+    visibility: visible;
+}
+
+#welcomeMatContainer h1 {
+    color: #fff;
+}
+
+.channelCarousel .next,
+.channelCarousel .prev {
+    background: url('/images/icon.svg') -285px -206px;
+    cursor: pointer;
+    height: 52px;
+    opacity: 0.9;
+    position: absolute;
+    bottom: 57px;
+    right: 16px;
+    width: 13px;
+}
+
+.channelCarousel .prev.disabled,
+.channelCarousel .next.disabled {
+    opacity: 0.25;
+}
+
+.channelCarousel .prev {
+    background: url('/images/icon.svg') -272px -206px;
+    left: 16px;
+    right: auto;
+}
+
+.carouselFrame {
+    cursor: hand;
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+    height: 112px;
+    overflow: hidden;
+}
+
+.carouselFrame ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.carouselFrame li {
+    float: left;
+    margin: 0 10px 0 0;
+    padding: 0;
+}
+
+.carouselFrame a {
+    background: #000;
+    display: block;
+    line-height: 14px;
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+}
+
+.carouselFrame h2 {
+    bottom: 10px;
+    color: #fff;
+    font-size: 13px;
+    left: 0px;
+    margin: 0;
+    position: absolute;
+    text-transform: uppercase;
+	background-color:rgba(0, 0, 0, 0.5);
+	padding:5px 10px;
+}
+
+
+.carouselFrame h3 {
+    top: -5px;
+    right: 5px;
+    color: #fff;
+    position: absolute;
+    text-transform: uppercase;
+    font: normal 20px/0px SFUTradeGothic, Arial, sans-serif;
+}
+
+.carouselFrame h3 span {
+    font-size: 17px;
+}
+
+.small .channelDropdown {
+    display: none;
+}
+
+.channelDropdown {
+    display: block;
+    margin: 20px;
+}
+
+.channelDropdown select {
+    font-size: 16px;
+    width: 100%;
+}
+
+h2.channelSubheading {
+    color: #666;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 10px 10px 10px 0;
+}
+
+.subChannelTop {
+    position: relative;
+    line-height: 0;
+}
+
+.subChannelTop img {
+    width: 100%;
+}
+
+.subChannelTop h1.subChannel {
+    bottom: 50%;
+    color: #fff;
+    font-size: 25px;
+    position: absolute;
+    right: 5%;
+}
+
+.subChannelTop .channelPagination {
+    background: #e9e9e9;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    /* @TODO Non-webkit compatibility */
+}
+
+.subChannelTop .channelPagination {
+    height: 55px;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.channelPagination {
+    overflow: hidden;
+    overflow-x: hidden; /* @TODO Scroller bar should auto */
+}
+
+.channelPagination li.channelTitle {
+    margin: 5px 20px 0 0;
+    display: block;
+    float: left;
+}
+
+.channelPagination ul {
+    list-style-type: none;
+    padding: 0;
+    width: 1000%;
+    min-height: 20px;
+    white-space: nowrap;
+}
+
+.channelPagination .centerWrapper {
+    display: inline-block;
+    margin: 10px 20px 0 20px;
+}
+
+.channelPagination .channelLink {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    background: #a0a0a0;
+    float: left;
+    line-height: 0px;
+    display: inline;
+}
+.channelPagination .channelLink:hover {
+    background: #FF4400;
+}
+
+.borderradius .channelPagination .channelLink {
+    border-radius: 20px;
+}
+.no-borderradius .channelPagination .channelLink {
+    background-color: transparent;
+    background: url('/images/circleBgGray25.png') no-repeat;
+}
+.no-borderradius .channelPagination .channelLink.selected {
+    background-color: transparent;
+    background: url('/images/circleBgBlue25.png') no-repeat;
+}
+
+.channelPagination .channelLink a {
+    vertical-align: middle;
+    margin: 11px 0;
+    padding: 4px;
+    text-align: center;
+    display: block;
+    font-family: SFUTradeGothic;
+    font-size: 15px;
+    color: white;
+}
+.lt-ie8 .channelPagination .channelLink a {
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.borderradius .channelPagination .channelLink.selected {
+    background: #1F4773;
+}
+
+.channelPagination H3 {
+    font-family: SFUTradeGothic;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin: 0 0 0 20px;
+    padding: 0;
+    color: #646464;
+    display: inline;
+}
+
+#channelTiles .alphaListWrapper {
+    width: 100%;
+    height: 40px;
+    padding: 4px 0 0 0;
+}
+.small #channelTiles .alphaListWrapper {
+    height: 22px;
+}
+
+#channelTiles .alphaListWrapper .alphaList {
+    display: block;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 300px;
+}
+
+.small #channelTiles .alphaListWrapper .alphaList {
+    width: 572px;
+}
+
+#channelTiles .alphaList .letter {
+    float: left;
+    width: 22px;
+    text-align: center;
+    padding-top: 1px;
+}
+
+#channelTiles .alphaList .letter a {
+    color: #636363;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/*
+ * Featured article box
+ **/
+
+.featuredArticle {
+    background: #E9E9E9;
+    box-sizing: border-box;
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.small .featuredArticle {
+    border-right: 1px solid #e9e9e9;
+}
+
+.normal .featuredArticle {
+    height: 360px;
+}
+
+.featuredArticle .photo {
+    height: 100%;
+    position: relative;
+}
+
+
+.featuredArticle .photo img.wide {
+    height: 100%;
+}
+
+.featuredArticle .photo img.square {
+    width: 100%;
+    margin-top: -33.3%;
+}
+
+.threeByOne .photo img.square {
+    margin-top: 0;
+}
+
+.featuredArticle .gradient {
+    width: 40px;
+    height: 100%;
+}
+
+.featuredArticle .textBox {
+    background: #000;
+    color: #fff;
+    display: table;
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    width: 50%;
+    z-index: 1;
+}
+
+.normal .featuredArticle .textBox {
+    left: 60%;
+    width: 40%;
+}
+
+.featuredArticle .textBox3x1 {
+    position: absolute;
+    bottom: 30px;
+    text-align: right;
+    right: 19px;
+    width: 340px;
+}
+
+
+.featuredArticle .textBox3x1 .boxTitle a {
+    color: #FFF;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.65);
+    display: block;
+    padding: 26px 20px 13px;
+	font: 32px/34px SFUTradeGothic, Arial, sans-serif;
+	text-transform:uppercase;
+}
+
+.featuredArticle .boxHeader {
+    background: #1f4773;
+    height: 36px;
+    margin-bottom: 2px;
+}
+
+.featuredArticle .todayHeader {
+    color: #FFF;
+    font-family: SFUTradeGothic;
+    font-size: 22px;
+    text-align: left;
+    padding: 8px 15px;
+    float: left;
+	text-transform:uppercase;
+}
+
+.featuredArticle .channelLabel a {
+    float: right;
+    font: 11px/11px SFUHelveticaLight, Arial, sans-serif;
+    background-color: #FFF;
+    padding: 5px;
+    margin: 8px ;
+    text-transform: uppercase;
+    color: #465866;
+}
+
+.featuredArticle .plus {
+    margin: 0 50% !important;
+}
+
+.large .featuredArticle .textBox {
+    left: 66.66%;
+    width: 33.33%;
+}
+
+.featuredArticle .textPlacement {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.featuredArticle .title {
+    font-size: 18px;
+    margin: 0 9%;
+}
+
+.small .featuredArticle .title {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.normal .featuredArticle .title {
+    font-size: 38px;
+    line-height: 42px;
+}
+
+.featuredArticle .blurb {
+    display: none;
+}
+
+.normal .featuredArticle .blurb {
+    display: block;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0 9%;
+}
+
+.featuredArticle .title a {
+    color: white;
+}
+
+.normal .featuredArticle .title {
+    margin-bottom: 5px;
+}
+
+.featuredArticle .pageLink {
+    float: right;
+    margin: 0 9%;
+}
+
+.featuredArticle .pageLink a {
+    font-size: 15px;
+    height: 25px;
+    line-height: 25px;
+    margin: 18px 0 0 0;
+    width: 86px;
+}
+.small .featuredArticle .pageLink a {
+    height: 32px;
+    line-height: 32px;
+    width: 107px;
+}
+.normal .featuredArticle .pageLink a {
+    font-size: 20px;
+    line-height: 34px;
+}
+
+.featuredArticle .gradient {
+    background: url('/images/featured-article-gradient.png') repeat-y;
+    height: 100%;
+    position: absolute;
+    right: 50%;
+    top: 0;
+    width: 50px;
+}
+.normal .featuredArticle .gradient {
+    right: 40%;
+}
+
+.large .featuredArticle .gradient {
+    right: 33.333%;
+}
+
+#TINY .textBox3x1 {
+   bottom: 10px;
+   right: 10px;
+   width: 300px;
+}
+
+#TINY .boxHeader {
+    height: 27px;
+}
+
+#TINY .featuredArticle .todayHeader {
+    padding: 5px 10px;
+    font-size: 20px;
+	text-transform:uppercase;
+}
+
+#TINY .featuredArticle .channelLabel a {
+    margin: 5px;
+}
+
+#TINY .featuredArticle .textBox3x1 .boxTitle a {
+    font-size: 24px;
+    line-height: 28px;
+    height: 75px;
+    text-align: left;
+}
