@@ -1,0 +1,45 @@
+.lt-ie9 #PoseLogo,
+.lt-ie9 #asideToggle,
+.lt-ie9 #menuToggle,
+.lt-ie9 #searchMagnifier,
+.lt-ie9 .plus .shareBtn,
+.lt-ie9 .plus .toggleBtn,
+.lt-ie9 .plus .toggleBtn span,
+.lt-ie9 .pagination li,
+.lt-ie9 .pagination .prevPage a,
+.lt-ie9 .pagination .nextPage a,
+.lt-ie9 .subChannelTop .breadcrumbs li img,
+.lt-ie9 #articleContainer .breadcrumbs li img,
+.lt-ie9 #header #channelMenuToggle.opened img, 
+.lt-ie9 #header #channelMenuToggle.closed img,
+.lt-ie9 .breadcrumbs .bullet,
+.lt-ie9 .breadcrumbs .home,
+.lt-ie9 .playerContainer .playBtn span,
+.lt-ie9 .channelCarousel .next,
+.lt-ie9 .channelCarousel .prev {
+    background-image: url('/images/icon.png')
+}
+
+.lt-ie9 #articleContainer {
+    min-height: 100%;
+}
+
+.lt-ie9 .plus .toggleBtn {
+    border: 0;
+    height: 38px;
+    width: 38px;
+}
+.lt-ie9 .plus .toggleBtn {
+    background: none;
+}
+.lt-ie9 .plus .shareBtn {
+    display: none;
+}
+.lt-ie9 .plus .shareBtn.open{
+    display: block;
+}
+.lt-ie9 .plus .shareBtn,
+.lt-ie9 .plus .toggleBtn,
+.lt-ie9 .plus .toggleBtn div {
+    background-color: transparent;
+}
