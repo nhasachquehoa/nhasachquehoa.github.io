@@ -1,0 +1,9 @@
+.interviewQuestion { 
+    font-family: SFUTradeGothic, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.interviewImage { 
+    float: left; 
+    padding: 0 5px 0 0 
+}
