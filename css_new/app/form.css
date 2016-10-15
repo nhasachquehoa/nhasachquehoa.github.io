@@ -1,0 +1,26 @@
+/* CSS Document */
+.form-control{ width:100%; margin-top:5px;}
+.form-booking{ width:100%; margin-top:15px; font-size:16px;}
+.form-booking .input {width:93%; background-color:#dedcdc; border:0px; font-family: SFUHelveticaLight, Arial, sans-serif;font-size: 16px; padding:5px 5px 5px 30px; border-radius:6px; margin-top:7px; }
+.form-control .input{ width:98%; border:2px #e4e4e4 solid; font-size:11px; font-family: SFUHelveticaLight, Arial, sans-serif;font-size: 16px; padding:2px; }
+
+
+.must{ color:red; font-size:20px;}
+.btnSubmit{
+	background: #07009f;
+    border-radius: 6px;
+    color: #fff;
+    font-family: SFUHelveticaLight, Arial, sans-serif;
+    font-size: 15px;
+	font-weight:800;
+    height: 38px;
+    margin: 0 auto;
+    text-align: center;
+	padding-left:35px;
+	padding-right:35px;
+	border:0px;
+	cursor:pointer;
+	}
+.btnSubmit:hover{
+	background: #1008b7;
+	}
