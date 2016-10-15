@@ -1,0 +1,181 @@
+.respAds {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.respAds .container,
+.respAds .container * {
+    margin: 0 auto;
+}
+
+#channelTiles .respAds {
+    clear: both;
+    float: left;
+    width: 100%;
+}
+#channelTiles .respAds:first-child {
+    border-top: 0;
+}
+
+
+/* TOP AD GROUP */
+
+.respAds.top {
+    background: #fff url('/images/ad_pattern.png');
+    border: 1px solid #e9e9e9;
+    border-width: 0 1px 0 0;
+    position: relative;
+    z-index: 10;
+}
+
+
+#channelTiles .respAds.top {
+    border-width: 1px 1px 0 0;
+}
+
+.respAds.top .container {
+    padding: 10px 0;
+}
+
+/* MOBILE SPECIFIC */
+
+.respAds.mobile {
+    border: 0;
+    padding: 0;
+}
+.respAds.mobile .container {
+    margin: 0;
+}
+
+/* INTERSTITIAL SPECIFIC */
+
+#ad-interstitial-overlay {
+    position: absolute;
+    width: 100%;
+    z-index: 100000;    /* To cross over all inpage ads */
+    background-color: black;
+}
+#ad-interstitial-fuse {
+    width: 100%;
+    height: 5px;
+    background-color: #D8D8D8;
+    margin-top: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 100010;    /* To cross over overlay */
+}
+#ad-interstitial-fusewire {
+    width: 0%;
+    height: 5px;
+    background-color: #1f4773;
+    margin-top: 0;
+    position: absolute;
+    left: 0;
+    z-index: 100020;    /* To cross over fuse */
+}
+#ad-interstitial-close {
+    display: block;
+    width: 34px;
+    height: 33px;
+    border-radius: 66px;
+    font-size: 23px;
+    color: #1f4773;
+    line-height: 35px;
+    text-align: center;
+    text-decoration: none;
+    background: #D8D8D8;
+    opacity: 1;
+    font-weight: bold;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #1f4773;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    z-index: 100020;
+}
+#ad-interstitial-close:hover {
+    color: #D8D8D8;
+    background: #1f4773;
+}
+#ad-interstitial-wrapper {
+    width: 100%;
+    position: absolute;
+    top: 130px;
+}
+#ad-interstitial-iframe {
+    margin: 0 auto;
+}
+
+/* ASIDE SPECIFIC */
+
+.respAds.aside {
+    background: #fff url('/images/ad_pattern.png');
+    float: left;
+    width: 100%;
+}
+
+.respAds.aside .container {
+    border: 1px solid #e9e9e9 !important;
+}
+
+/* CONTENT GROUP */
+
+.respAds.content {
+    background: #fff url('/images/ad_pattern.png');
+    border: 1px solid #e9e9e9;
+    border-width: 1px 1px 0 0;
+}
+
+.respAds.content .container {
+    padding: 10px 0;
+}
+
+#TINY .respAds img{
+	width:100%;
+	height:100%;
+}
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides a {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+  #AdDetailPage{ background: #fff url('/images/ad_pattern.png');
+    border: 1px solid #e9e9e9;
+    position: relative;
+    z-index: 10;
+	 margin:20px 0px;  text-align:center;}
+
+   #AbdMPopup{
+     display: none;
+   }
