@@ -1,0 +1,179 @@
+#leftMenu {
+    font: 0.875em/1.35em SFUHelveticaLight, Arial, sans-serif;
+    display: none;
+    padding: 10px 0;
+    position: fixed;
+    top: 45px;
+    text-transform: uppercase;
+    width: 100%;
+	height:170px;
+    z-index: 10000 !important;
+	background:#f7f7f7;
+	
+}
+
+#TINY #leftMenu, #SMALL #leftMenu { width:210px; height:100%;background:#fff;overflow: auto;} 
+#leftMenu .cover{
+	    margin: 10px auto;
+    max-width: 1360px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+	margin-top:15px;
+}
+
+
+
+
+#leftMenu .cover .anvachoi{float:left; display:block;  margin-left:157px; max-width:240px; height:130px;  padding-left:20px; border-left:1px solid #e1e1e1; text-align:left;}
+
+
+#leftMenu .cover h3{color: #1f4773;
+    font: 1.4em/1.5em SFUTradeGothic,  Arial, sans-serif;
+    margin: 0px 30px 10px 0;}
+#leftMenu .cover .anvachoi a{ float:left; display:block; width:45%; margin:7px 10px 7px 0px;}
+
+
+#leftMenu .cover .lifestyle{float:left; display:block;  max-width:160px; height:130px; padding-left:25px;  border-left:1px solid #e1e1e1; text-align:left;}
+#leftMenu .cover .lifestyle a{ float:left; display:block; width:80%; margin:7px 10px 7px 0px;}
+
+#leftMenu .cover .dep{float:left; display:block;  max-width:320px; height:130px; padding-left:25px;  border-left:1px solid #e1e1e1; text-align:left;}
+#leftMenu .cover .dep a{ float:left; display:block; width:35%; margin:7px 10px 7px 0px;}
+#leftMenu .cover .dep  .half{ min-width:170px;}
+
+#leftMenu .cover .dacbiet{float:left; display:block;  max-width:160px; height:130px; padding-left:25px;  border-left:1px solid #e1e1e1; text-align:left;}
+#leftMenu .cover .dacbiet a{ float:left; display:block; width:80%; margin:7px 10px 7px 0px;}
+
+#leftMenu.open {
+    border-right: 1px solid #e9e9e9;
+    display: block;
+}
+
+
+#TINY #leftMenu .anvachoi, #SMALL #leftMenu .anvachoi,
+#TINY #leftMenu .lifestyle, #SMALL #leftMenu .lifestyle, 
+#TINY #leftMenu .dep, #SMALL #leftMenu .dep, 
+#TINY #leftMenu .dacbiet, #SMALL #leftMenu .dacbiet{ margin-left:0px; border-bottom:1px solid #e1e1e1; width:190px !important; max-width:190px !important; padding-left:10px;  height:auto;}
+
+#TINY #leftMenu a, #SMALL #leftMenu a, #TINY #leftMenu .half, #SMALL #leftMenu .half{ width:190px  }
+
+#TINY #leftMenu  h3, #SMALL #leftMenu h3 { display:none;}
+#TINY #leftMenu  a, #SMALL #leftMenu a { width:100%;margin:3px;  font: 0.75em/1.35em SFUHelveticaLight, Arial, sans-serif;}
+
+#leftMenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#leftMenu a {
+    color: #89888b;
+}
+
+#leftMenu li a {
+
+    padding: 3px 30px 2px 0;
+}
+\
+
+#leftMenu .socialButtons a.twitter {
+    background-position: -108px -69px;
+}
+
+#leftMenu .socialButtons a.pinterest {
+    background-position: -60px -97px;
+}
+
+#leftMenu .socialButtons a.google {
+    background-position: -87px -97px;
+}
+
+.no-touch #leftMenu > ul > li:hover > a,
+.no-touch #leftMenu > ul > li > a:hover,
+.touch #leftMenu li.open > a {
+    background: #1f4773;
+    color: #fff;
+}
+
+.no-touch #leftMenu li:hover .submenu {
+    display: block;
+}
+
+.csstransforms  .leftMenuFloat #leftMenu .submenu {
+    display: block;
+    -webkit-transition: -webkit-transform 200ms;
+    -moz-transition:    -moz-transform    200ms;
+    -o-transition:      -o-transform      200ms;
+    -ms-transition:     -ms-transform     200ms;
+    transition:         transform         200ms;
+    -webkit-transform: translate(-200px, 0);
+    -moz-transform:    translate(-200px, 0);
+    -o-transform:      translate(-200px, 0);
+    -ms-transform:     translate(-200px, 0);
+    transform:         translate(-200px, 0);
+}
+
+.csstransforms .leftMenuFloat #leftMenu li.open .submenu {
+    -webkit-transform: translate(0, 0);
+    -moz-transform:    translate(0, 0);
+    -o-transform:      translate(0, 0);
+    -ms-transform:     translate(0, 0);
+    transform:         translate(0, 0);
+    visibility: visible;
+}
+
+.no-csstransforms .leftMenuFloat #leftMenu li.open .submenu {
+    display: block;
+}
+
+
+
+#leftMenu .adChoice {
+    margin-right: 30px;
+}
+
+
+.touch .leftMenuFloat #leftMenu {
+    -webkit-overflow-scrolling: touch;
+    font-size: 1.2em;
+      width: 260px;
+}
+
+.touch .leftMenuFloat #leftMenu .submenu {
+    -webkit-overflow-scrolling: touch;
+}
+
+
+.no-touch #TINY .menuHeading, .no-touch #NORMAL .menuHeading {
+    border-top: 1px solid #E9E9E9;
+    width: 160px;
+    margin-left: 29px;
+    height: 3px;
+    font-size: 0;
+    margin-top: 3px;
+}
+
+@media screen and (max-width:1040px){
+
+  #SMALL #leftMenu h3,
+  #TINY #leftMenu h3{
+      display: block !important;
+      padding-bottom: 2px;
+      margin: 8px 0 4px !important;
+      border-bottom: 1px solid #ccc;
+      font-size: 18px;
+  }
+
+  #SMALL #leftMenu .anvachoi h3,
+  #TINY #leftMenu .anvachoi h3{
+    margin-top: 0 !important;
+  }
+  #TINY #leftMenu .anvachoi, #SMALL #leftMenu .anvachoi, #TINY #leftMenu .lifestyle, #SMALL #leftMenu .lifestyle, #TINY #leftMenu .dep, #SMALL #leftMenu .dep, #TINY #leftMenu .dacbiet, #SMALL #leftMenu .dacbiet{
+      border: 0 !important;
+  }
+  #leftMenu .cover{
+    margin-top: 5px;
+    padding-bottom: 60px;
+    overflow: hidden;
+  }
+}
