@@ -1,0 +1,29 @@
+.playerContainer.embedded .bigPicture {
+    visibility: hidden;
+}
+
+.playerContainer .playBtn {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.playerContainer .playBtn span {
+    background: url('/images/icon.svg') -204px -46px no-repeat;
+    display: block;
+    height: 133px;
+    left: 50%;
+    margin: -67px 0 0 -67px;
+    position: absolute;
+    top: 50%;
+    width: 133px;
+}
+
+.playerContainer iframe, .playerContainer object {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
