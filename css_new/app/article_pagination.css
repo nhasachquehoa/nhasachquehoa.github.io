@@ -1,0 +1,102 @@
+.paginationWrapper {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#articleContainer .pagination {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    white-space: nowrap;
+    width: 280px;
+    height: 45px;
+    overflow: hidden;
+    overflow-x: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.small #articleContainer .pagination {
+    width: 100%;
+}
+
+.pagination li {
+    background: url('/images/icon.svg') no-repeat -38px -296px;
+    margin: 0 4px;
+    padding: 0;
+    line-height: 28px;
+    height: 38px;
+    width: 38px;
+    display: inline-block;
+}
+
+
+.small .pagination li {
+    margin: 0 2px;
+}
+
+.lt-ie8 .pagination .li {
+    display: inline;
+}
+
+.pagination .selected {
+    background-position: -0px -296px;
+}
+
+.pagination li:hover {
+    background-position: -76px -296px;
+}
+
+.pagination a {
+    color: #919191;
+    display: block;
+    text-align: center;
+    line-height: 42px;
+}
+
+.pagination .selected a,
+.pagination a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.pagination .disabled {
+    background-position: -177px -268px !important;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+}
+
+.pagination .disabled a {
+    cursor: default;
+}
+
+.pageLink {
+    margin: 30px 0;
+}
+
+.pageLink a {
+    background: #f40;
+    border-radius: 3px;
+    color: #fff;
+    display: block;
+    font-family: SFUTradeGothic, Arial, sans-serif;
+    font-size: 26px;
+    height: 54px;
+    line-height: 56px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 168px;
+}
+
+.no-touch .pageLink a:hover {
+    background-color: #ff6633;
+}
+
+.no-touch .pageLink a:hover {
+    text-decoration: none;
+}
