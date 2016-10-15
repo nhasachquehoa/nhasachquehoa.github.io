@@ -1,0 +1,57 @@
+aside {
+    background: #fff;
+    border-bottom: 1px solid #e9e9e9;
+    display: none;
+    float: left;
+    min-width: 300px;
+    max-width: 360px;
+    width: 33.28%;
+}
+aside .ads{ padding-bottom:100% !important;}
+body.asideInline aside {
+    display: block;
+}
+
+body.asideFloat aside.fixed {
+    position: fixed;
+    top: 45px;
+    right: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 300px;
+    z-index: 999999;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+aside .scrollTrigger {
+    float: left;
+    visibility: hidden;
+}
+
+aside .articleTile:first-child .borderTop,
+aside .respAds + .articleTile .borderTop {
+    display: none;
+}
+
+aside .articleTile .borderLeft {
+    display: block;
+}
+
+#asideToggle {
+    background: url('/images/icon.svg') no-repeat -546px -184px;
+    cursor: pointer;
+    height: 64px;
+    position: fixed;
+    right: 0;
+    top: 46%;
+    width: 22px;
+    display: none !important;
+}
+
+#asideToggle.open {
+    right: 300px
+}
