@@ -1,0 +1,252 @@
+.profileHead {
+    margin: 0;
+    padding: 0;
+}
+
+.score, .vitals {
+    display: inline-block;
+    height: 114px;
+    width: 32%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: top;
+}
+
+.vitals {
+    text-align: left;
+}
+
+.vitals .details DIV {
+    padding-left: 40px;
+}
+
+.vitals .details DIV.label {
+    padding-left: 23px;
+}
+
+#TINY .score {
+    width: 50%;
+}
+
+#TINY .vitals {
+    width: 100%;
+    margin-top: 18px;
+}
+
+.vitals .headerLabel, .score .scoreLabel {
+    margin-bottom: 14px;
+}
+
+.vitals .headerLabel {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.small .vitals .headerLabel {
+    margin-top: 0px;
+}
+
+.vitals .details {
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.score input {
+    width: 30%;
+}
+
+.headerLabel, .scoreLabel {
+    color: #c0c0c0;
+    font-size: 20px; 
+}
+
+.vitals .details {
+    background: #f7f7f7;
+    box-shadow: 3px 3px 2px rgba(0,0,0,0.2);
+}
+
+.vitals .details .label {
+    display: block;
+    font-weight: bold;
+}
+#contentContainer  .vitals .details .label img {
+    display: inline;
+    height: 10px;
+    width: 10px;
+}
+
+.profileHeader img {
+    margin: -10px 0px 0px 0px;
+}
+
+.profileSection.introduction:first-letter {
+    color: #1f4773;
+    margin: 0 0.2em 0 0;
+    font-size: 5em;
+    vertical-align: top;
+    float: left;
+    line-height: 1.0;
+}
+
+.profileSection {
+    margin-bottom: 5em;
+}
+
+.profileHead .quote {
+    margin: 0;
+    padding: 2em 1em;
+    margin-top: 4em;
+}
+
+.profileSection .score {
+    float: left;
+    margin-bottom: 1.5em;
+}
+
+.scoreText .score .scoreLabel {
+    color: #1f4773;
+}
+
+
+.slideshowWrapper.off {
+    display: none;
+}
+
+.slideshowWrapper.on {
+    display: block;
+}
+
+.slideshowToggle img {
+    height: 68px;
+    width: 68px;
+    background: url('/images/slideshow_start.png') no-repeat 0px 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -34px;
+    opacity: 0.4;
+}
+
+.slideshowToggle.off {
+    display: none
+}
+
+.slideshowToggle.on {
+    display: block;
+}
+
+/* Alphabet Links Styling */
+.alphaListWrapper {
+	background-color:#b6b5b5;
+	color:#333333;
+    height: 50px;
+    width: 100%;
+    border-top: 1px solid #fafafa;
+    border-bottom: 1px solid #fafafa;
+    padding-top: 0px;
+    margin: 15px 0;
+}
+
+.date{display: block; margin-left: 15px;
+    float: left; color:#333333; font-size:14px; letter-spacing:1.4px;}
+
+.small .alphaListWrapper {
+    height: 20px;
+    padding-top: 7px;
+}
+
+.alphaList{
+    min-height: 20px;
+    list-style: none;
+    margin: -5px auto;
+    padding: 0;
+    width: 260px;
+}
+
+#TINY .alphaList {
+    width: 260px;
+	margin: 5px auto;
+	
+}
+.small .alphaList {
+    width: 520px;
+	margin: -5px auto;
+	
+}
+
+.alphaList .letter a {
+    display: block;
+    float: left;
+    width: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #333333;
+}
+
+.alphaList .letter a:hover, 
+.alphaList .letter.selected a {
+    color: #FF4400;
+}
+
+.bigPicture.profile {
+   height: 150px;
+   width: 100%;
+}
+.small .bigPicture.profile {
+    height: 240px;
+}
+
+.bigPicture.profile {
+    overflow: hidden;
+    display: block;
+}
+
+.bigPicture.profile .thumbnail {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bigPicture.profile .thumbnail:last-child {
+    display: none;
+}
+.small .bigPicture.profile .thumbnail {
+    width: 33.33%;
+}
+.small .bigPicture.profile .thumbnail:last-child {
+    display: block;
+}
+
+.bigPicture.profile .thumbnail.grid a {
+    width: 50%;
+    height: 50%;
+    display: block;
+    float: left;
+    display: block;
+    overflow: hidden;
+}
+
+.bigPicture.profile .thumbnail img {
+    width: 100%;
+}
+
+.galleryLink.profile {
+    position: absolute;
+    bottom: 0px;
+    left: 68%;
+    width: 20.66%;
+    height: 38px;
+    line-height: normal;
+    color: white;
+}
+
+.galleryLink.profile a {
+    color: white;
+    font-size: 16px;
+    text-shadow: 1px 1px 1px black;
+}
