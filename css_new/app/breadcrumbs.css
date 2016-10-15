@@ -1,0 +1,65 @@
+
+.breadcrumbsWrapper {
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;   
+}
+
+.touch .breadcrumbsWrapper {
+     overflow-y: hidden;
+     overflow-x: scroll;
+     -webkit-overflow-scrolling: touch
+}
+
+.breadcrumbs {
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    list-style: none;
+    width: 250%;
+}
+
+.breadcrumbs li, .breadcrumbs li a {
+    color: #646464;
+    /*font-family: SFUHelveticaLight, Arial, sans-serif;*/
+    font-family: Arial,'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 30px;
+	text-transform:uppercase;
+}
+
+.breadcrumbs li {
+    float: left;
+    margin-left: 10px;
+}
+
+.breadcrumbs li a {
+    text-decoration: underline;
+}
+
+.breadcrumbs .bullet {
+    width: 8px;
+    height: 12px;
+    background: url('/images/icon.svg') no-repeat -363px -68px;
+    margin-top: 8px;
+}
+
+
+.breadcrumbs li a:hover {
+    color: #FF4200;
+}
+
+.breadcrumbs .home {
+    background: url('/images/icon.svg') no-repeat -335px -68px;
+    width: 18px;
+    margin: 8px 0 0 5px;
+    height: 14px;
+}
+
+.breadcrumbs .home a {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
