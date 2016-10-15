@@ -1,0 +1,132 @@
+/* TINY
+ *************************************************************/
+
+#TINY aside {
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: fixed;
+	right: 0;
+	top: 45px;
+}
+
+#TINY #uvTab { /* UserVoice Tab placement */
+    bottom: 0 !important;
+    top: auto !important;
+    left: 50% !important;
+    margin-left: -92px;
+    z-index: 999999;
+}
+
+
+#TINY .theArticle img {
+    max-width: 300px;
+    height: auto !important;
+}
+
+#TINY .theArticle iframe:not(.instagram-media) {
+    max-width: 300px;
+    height: auto;
+}
+
+#TINY .channelCarousel {
+    margin-bottom: -30px;
+}
+
+#TINY .loader {
+    background: #ff4400;
+}
+
+#TINY .articleTile .borderLeft {
+    display: none;
+}
+
+
+/* SMALL TABLET - Media-query only breakpoint
+ *************************************************************/
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+
+    #channelTiles .articleTile, #bottomTiles .articleTile {
+        padding-bottom: 25%;
+        width: 50%;
+    }
+
+    #channelTiles .articleTile.bigBlock {
+        padding-bottom: 50%;
+    }
+
+
+    #channelTiles .articleTile:nth-child(5n-1),
+    #channelTiles .articleTile:nth-child(5n+1) {
+        /*clear: both;  Fixes bad block flow at certain sizes */
+    }
+
+}
+
+/* SMALL
+ *************************************************************/
+
+body.small aside {
+    display: block;
+}
+
+body.small .theArticle {
+    width: 100%;
+    padding: 0;
+}
+
+body.small .theArticle img {
+    max-width: 520px;
+	height:auto !important;
+}
+
+
+body.small.rootChannel #articleContainer {
+    border: 0;
+}
+
+
+body.small h1.subChannel {
+    bottom: auto;
+    font-size: 45px;
+    top: 40%;
+}
+
+body.small .loader {
+    background: #b4b4b4;
+}
+
+
+.articleTile .blurb {
+    display: block;
+}
+
+body.normal .articleMain {
+    width: 66.666%;
+}
+
+body.normal aside {
+    display: block;
+}
+
+body.normal #asideToggle {
+    display: none;
+}
+
+body.small  #channelTiles .articleTile, body.small  #bottomTiles .articleTile {
+    padding-bottom: 25%;
+    width: 50%;
+}
+
+body.small  #channelTiles .articleTile.bigBlock {
+    padding-bottom: 49.9%;
+}
+
+body.normal #channelTiles .articleTile {
+    padding-bottom: 16.666%;
+    width: 33.333%;
+}
+
+body.normal #channelTiles .articleTile.bigBlock {
+    padding-bottom: 33.33%;
+}
