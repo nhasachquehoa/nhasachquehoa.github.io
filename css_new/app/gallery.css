@@ -1,0 +1,383 @@
+/* Fotorama Overrides */
+.fotorama__arr,
+.fotorama__fullscreen-icon,
+.fotorama__video-play,
+.fotorama__video-close {
+  background: url("/images/icon.svg") no-repeat;
+}
+
+.fotorama__arr {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  top: 50%;
+  margin-top: -36px;
+}
+
+.fotorama__arr--prev {
+  left: 2%;
+  background-position: -312px -335px;
+}
+
+.fotorama__arr--next {
+  right: 2%;
+  background-position: -390px -335px;
+}
+
+.fotorama__caption {
+  height: 22px;
+  padding: 10px;
+}
+.fotorama__caption .fotorama__caption__wrap {
+  font-size: 12px;
+  color: #465866;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 4px;
+  line-height: 14px;
+}
+
+/* End Fotorama Overrides */
+.hasGallery .playerContainer {
+  max-height: none;
+}
+.hasGallery .playerContainer .bigPicture {
+  max-height: none;
+}
+.hasGallery .slideshowWrapper {
+  background-size: cover;
+}
+.hasGallery .bigPicture .articleimg {
+  display: none;
+}
+.hasGallery .bigPicture.profile .articleimg {
+  display: block;
+}
+.hasGallery .darkener {
+  background: black;
+  width: 100%;
+  height: 100%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  position: absolute;
+}
+.hasGallery .articleCrd {
+  display: none;
+}
+
+.galleryPagination {
+  background: url("/images/icon.svg") no-repeat -145px -184px;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  z-index: 1500;
+  height: 48px;
+  width: 48px;
+  list-style: none;
+  color: white;
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+  pointer-events: none;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.saveButton {
+  background: url("/images/icon.svg") no-repeat -145px -184px;
+  top: 2%;
+  left: 2%;
+  z-index: 1500;
+  height: 48px;
+  width: 48px;
+  margin: 0;
+  padding: 0px;
+  pointer-events: none;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.saveButton .save{ padding-top:20px;font-family: Arial, sans-serif;
+  font-size:14px;
+  font-weight: bold;
+  text-align: center;
+   color: white;}
+
+
+.galleryPagination.noControls {
+  left: -10%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.galleryPagination .numbers {
+  z-index: 1750;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: white;
+  line-height: 0.9;
+  text-align: center;
+}
+
+.galleryPagination .imageNumber {
+  font-size: 20px;
+}
+
+.small .galleryPagination .imageNumber {
+  font-size: 25px;
+}
+
+.galleryPagination .imageTotal {
+  font-size: 14px;
+}
+
+.slideshowControls {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  z-index: 1000;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.slideshowControls.hide {
+  display: none;
+}
+
+.slideshowControls.noControls {
+  right: -15%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.slideshowControls .pauseButton,
+.slideshowControls .playButton {
+  height: 33px;
+  width: 75px;
+}
+
+.slideshowControls .playButton {
+  background: url("/images/icon.svg") no-repeat -338px -34px;
+}
+
+.slideshowControls .pauseButton {
+  background: url("/images/icon.svg") no-repeat -338px -2px;
+}
+
+.relatedGalleries a {
+  color: white;
+}
+.relatedGalleries .darkener {
+  z-index: -1;
+}
+.relatedGalleries .label {
+  line-height: 20px;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  color: white;
+  font-size: 20px;
+  margin-left: -105px;
+  width: 210px;
+  text-align: center;
+}
+.relatedGalleries .label.other {
+  display: none;
+}
+.relatedGalleries .nextGallery {
+  position: absolute;
+  top: 65px;
+  left: 50%;
+  width: 210px;
+  height: 105px;
+  margin-left: -105px;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  border: 2px solid #91928f;
+}
+@media only screen and (max-width: 782px) and (min-width: 480px) {
+  .relatedGalleries .nextGallery {
+    width: 360px;
+    height: 180px;
+    margin-left: -180px;
+  }
+}
+.relatedGalleries .nextGallery .caption {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  margin-left: 5px;
+  font-family: SFUTradeGothic, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+}
+@media only screen and (max-width: 782px) and (min-width: 480px) {
+  .relatedGalleries .nextGallery .caption {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+.relatedGalleries .caption {
+  display: none;
+}
+.relatedGalleries .nextGallery:before {
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0.5));
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0.5));
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0.5));
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0.5));
+  z-index: 0;
+}
+.relatedGalleries .secondary {
+  display: none;
+}
+
+.countdown.show {
+  display: block;
+}
+
+.countdown {
+  display: none;
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+.countdown .countdown__spinner {
+  -webkit-animation: spinner 1s infinite linear;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  animation: spinner 1s infinite linear;
+}
+.countdown .countdown__digit {
+  line-height: 45px;
+  position: absolute;
+  top: 0px;
+  right: 2px;
+  color: white;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+}
+
+.countdown.stop .countdown__spinner {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+.countdown.stop .countdown__digit {
+  color: #FF4400;
+}
+
+.small .relatedGalleries .secondary {
+  display: inherit;
+}
+.small .relatedGalleries .nextGallery {
+  width: 168px;
+  height: 84px;
+}
+.small .relatedGalleries .nextGallery .caption {
+  display: none;
+}
+.small .relatedGalleries .nextGallery .caption.first {
+  display: inherit;
+}
+.small .relatedGalleries .nextGallery.first {
+  width: 328px;
+  height: 164px;
+  margin-left: -164px;
+}
+.small .relatedGalleries .nextGallery.secondary {
+  top: 282px;
+}
+.small .relatedGalleries .nextGallery.second {
+  margin-left: -277px;
+}
+.small .relatedGalleries .nextGallery.third {
+  margin-left: -84px;
+}
+.small .relatedGalleries .nextGallery.fourth {
+  margin-left: 109px;
+}
+.small .relatedGalleries .label {
+  width: 328px;
+  margin-left: -164px;
+}
+.small .relatedGalleries .label.head {
+  font-size: 40px;
+  line-height: 40px;
+  top: 18px;
+}
+.small .relatedGalleries .label.other {
+  display: inherit;
+  top: 250px;
+}
+.small .relatedGalleries .label.other .line {
+  background: white;
+  height: 1px;
+  width: 134px;
+  margin-top: 7px;
+}
+.small .relatedGalleries .label.other .line.first {
+  float: left;
+}
+.small .relatedGalleries .label.other .line.last {
+  float: right;
+}
+.small .relatedGalleries .caption.secondary {
+  position: absolute;
+  width: 164px;
+  top: 376px;
+  left: 50%;
+  font-family: SFUTradeGothic, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+}
+.small .relatedGalleries .caption.second {
+  margin-left: -277px;
+}
+.small .relatedGalleries .caption.third {
+  margin-left: -84px;
+}
+.small .relatedGalleries .caption.fourth {
+  margin-left: 109px;
+}
+
+.lt-ie9 .fotorama__arr,
+.lt-ie9 .fotorama__fullscreen-icon,
+.lt-ie9 .fotorama__video-play,
+.lt-ie9 .fotorama__video-close,
+.lt-ie9 .galleryPagination,
+.lt-ie9 .slideshowControls .playButton img,
+.lt-ie9 .slideshowControls .pauseButton img {
+  background-image: url("/images/icon.png");
+}
