@@ -1,0 +1,119 @@
+/*** Header Channel Menu Styles ***/
+#header #channelMenuToggle {
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    margin: 0 100px;
+    text-transform: uppercase;
+}
+.small #header #channelMenuToggle {
+    width: 150px;
+    overflow: hidden;
+    border-left: 1px solid #A7A7A7;
+}
+
+#header #channelMenuToggle img {
+    height: 11px;
+    width: 14px;
+}
+
+.small #header #channelMenuToggle img {
+    position: absolute;
+    top: 2px;
+    right: 0;
+}
+
+#header #channelMenuToggle .channelName {
+    display: none;
+}
+
+.small #header #channelMenuToggle .channelName {
+    display: inline;
+}
+
+#header #channelMenuToggle.opened img {
+    background: url('/images/icon.svg') no-repeat -296px -227px;
+}
+
+#header #channelMenuToggle.closed img {
+    background: url('/images/icon.svg') no-repeat -278px -208px;
+}
+
+#headerMenu.closed {
+    display: none;
+}
+
+#headerMenu.opened {
+    display: block;
+}
+
+#headerMenu {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    padding: 0px;
+    background: #FFFFFF;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    list-style: none;
+    top: 0px;
+    left: 50%;
+    margin-left: -150px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.small #headerMenu {
+    height: auto;
+    overflow: inherit;
+}
+
+.small #headerMenu {
+    width: 600px;
+    margin-left: -300px;
+}
+
+#headerMenu:after {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 250px;
+    border-style: solid;
+    border-width: 0 7px 7px;
+    border-color: #FFFFFF transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+}
+.small #headerMenu:after {
+    left: 538px;
+}
+
+#headerMenu .subchannel {
+    height: 20px;
+    border-bottom: 1px solid #F0F0F0;
+    margin: 0 15px;
+    text-align: left;
+    padding: 10px;
+    display: block;
+    width: 280px;
+}
+
+#headerMenu .subchannel:last-child {
+    border: 0;
+}
+
+#headerMenu .subchannel a {
+    color: #A0A0A0;
+}
+
+#headerMenu .channel, #channelMenuToggle .channelName {
+    font-size: 20px;
+    color: #1F4773;
+    font-family: SFUTradeGothic, Arial, sans-serif;
+
+}
+
+.small #headerMenu .channel {
+    display: none;
+}
