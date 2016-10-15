@@ -1,0 +1,333 @@
+.nineShop {
+  /* Main wrapper container */
+  /* Main image and product information */
+  /* Title author information */
+  /* Product list */
+}
+#nineShopContainer .nineShop {
+  width: 100%;
+}
+.nineShop .theArticle {
+  max-width: 100%;
+}
+.nineShop .pageLink {
+  display: none;
+}
+.nineShop .playerContainer {
+  line-height: normal;
+}
+.nineShop .playerContainer .productInformation {
+  position: absolute;
+  width: 230px;
+  z-index: 100;
+  right: 16%;
+  top: 12%;
+}
+#TINY .nineShop .playerContainer .productInformation {
+  display: none;
+}
+.nineShop .playerContainer .productInformationTiny {
+  background-color: #f4f4f4;
+  margin-top: -5px;
+  padding: 20px;
+  padding-top: 40px;
+  margin-bottom: 40px;
+  float: left;
+  clear: both;
+  display: none;
+}
+#TINY .nineShop .playerContainer .productInformationTiny {
+  display: block;
+}
+.nineShop .playerContainer .articleTitle {
+  font: normal 34px SFUTradeGothic, Arial, sans-serif;
+  line-height: normal;
+  padding: 5px;
+}
+.nineShop .playerContainer .articleInformation {
+  font: normal 34px SFUTradeGothic, Arial, sans-serif;
+  font-size: 13px;
+  line-height: normal;
+  padding: 5px;
+}
+#TINY .nineShop .playerContainer .articleInformation {
+  font-size: 18px;
+  width: 100%;
+}
+.nineShop #articleTitleInfo {
+  text-align: center;
+  padding-top: 20px;
+}
+.nineShop #articleTitleInfo .snazzyProduct {
+  font: normal 34px SFUTradeGothic, Arial, sans-serif;
+}
+.nineShop #articleTitleInfo .blurbProduct {
+  width: 400px;
+  margin: 0 auto;
+  font: normal 34px SFUTradeGothic, Arial, sans-serif;
+  font-size: 13px;
+}
+#TINY .nineShop #articleTitleInfo .blurbProduct {
+  width: 95%;
+  font-size: 16px;
+  margin-top: 12px;
+}
+.nineShop .author {
+  border: none;
+  display: inline;
+}
+.nineShop .author .authorInfo {
+  display: inline;
+  width: 200px;
+  margin-left: 28%;
+}
+.nineShop .authorContainer {
+  width: 100%;
+  margin: 5px 0;
+  float: left;
+  clear: both;
+}
+.nineShop .authorContainer .authorWrapper {
+  width: 100px;
+  height: 32px;
+  margin: 5px auto;
+}
+.nineShop .authorContainer .authorWrapper .authorImage {
+  width: 32px;
+  height: 32px;
+  position: relative;
+}
+.nineShop .authorContainer .authorWrapper .authorImage .authorName {
+  position: absolute;
+  width: 200px;
+  left: 40px;
+  top: 0px;
+  font-size: 13px;
+  color: #f40;
+}
+.nineShop #products {
+  margin: 0 auto;
+  border: 1px solid #fff;
+  overflow: hidden;
+}
+.nineShop #products .productItem {
+  width: 250px;
+  height: 370px;
+  border: 4px solid #ececec;
+  float: left;
+  margin: 20px;
+  cursor: pointer;
+}
+#TINY .nineShop #products .productItem {
+  width: 220px;
+  height: 320px;
+  display: block;
+  margin: 20px auto;
+  float: none;
+}
+.nineShop #products .productItem .productImage {
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 290px;
+  width: 250px;
+}
+#TINY .nineShop #products .productItem .productImage {
+  height: 240px;
+  width: 220px;
+}
+.nineShop #products .productItem .productInformation {
+  background-color: #ececec;
+  font-size: 12px;
+  line-height: 14px;
+  color: #858d94;
+  text-align: center;
+  height: 80px;
+  padding: 0 4px 0 4px;
+}
+.nineShop #products .productItem .productInformation .title {
+  font-weight: bold;
+  color: #465866;
+  padding: 10px 0 5px 0;
+}
+.nineShop #products .productItem .productInformation .category {
+  padding-bottom: 4px;
+}
+.nineShop #products .productItem .productInformation .priceLabel {
+  text-decoration: line-through;
+  display: inline;
+}
+.nineShop #products .productItem .productInformation .salePrice {
+  font-size: 15px;
+  margin-left: 5px;
+  color: #F40;
+  font-weight: bold;
+  display: inline;
+}
+.nineShop #products .productItem .borderTopImage {
+  width: 100%;
+  height: 15px;
+  background: #fff;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 100px;
+}
+.nineShop .seeNineShopsButton {
+  cursor: pointer;
+  margin: 40px auto;
+  width: 201px;
+  height: 55px;
+  background-image: url("/images/icon.svg");
+  background-position: -547px 407px;
+}
+
+@media screen and (min-width: 640px) {
+  #products {
+    width: 600px;
+  }
+}
+@media screen and (min-width: 900px) {
+  #products {
+    width: 900px;
+  }
+}
+/* Show ranking numbers on channel hub page */
+.shopRank {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+  background-image: url("/images/icon.svg");
+  background-position: 331px 104px;
+  width: 53px;
+  height: 61px;
+}
+#TINY .shopRank {
+  right: 54%;
+  z-index: 100;
+  background-position: 321px 41px;
+  width: 34px;
+  height: 40px;
+}
+
+.shopRankNumber_1 {
+  margin: 0 auto;
+  background-image: url("/images/icon.svg");
+  width: 14px;
+  height: 61px;
+  background-position: 275px 104px;
+}
+#TINY .shopRankNumber_1 {
+  width: 10px;
+  height: 40px;
+  background-position: 271px 41px;
+}
+
+.shopRankNumber_2 {
+  margin: 0 auto;
+  background-image: url("/images/icon.svg");
+  width: 17px;
+  height: 61px;
+  background-position: 260px 104px;
+}
+#TINY .shopRankNumber_2 {
+  width: 10px;
+  height: 40px;
+  background-position: 261px 40px;
+}
+
+.shopRankNumber_3 {
+  margin: 0 auto;
+  background-image: url("/images/icon.svg");
+  width: 14px;
+  height: 61px;
+  background-position: 243px 104px;
+}
+#TINY .shopRankNumber_3 {
+  width: 10px;
+  height: 40px;
+  background-position: 251px 41px;
+}
+
+.shopRankNumber_4 {
+  margin: 0 auto;
+  background-image: url("/images/icon.svg");
+  width: 18px;
+  height: 61px;
+  background-position: 227px 104px;
+}
+#TINY .shopRankNumber_4 {
+  width: 11px;
+  height: 40px;
+  background-position: 240px 41px;
+  margin-right: 12px;
+}
+
+.shopRankNumber_5 {
+  margin: 0 auto;
+  background-image: url("/images/icon.svg");
+  width: 16px;
+  height: 61px;
+  background-position: 208px 104px;
+}
+#TINY .shopRankNumber_5 {
+  width: 11px;
+  height: 40px;
+  background-position: 227px 41px;
+}
+
+.shopRankNumber_6 {
+  margin: 0 auto;
+  background-image: url("/images/icon.svg");
+  width: 17px;
+  height: 61px;
+  background-position: 191px 104px;
+}
+#TINY .shopRankNumber_6 {
+  width: 11px;
+  height: 40px;
+  background-position: 216px 41px;
+}
+
+.shopRankNumber_7 {
+  margin: 0 auto;
+  background-image: url("/images/icon.svg");
+  width: 16px;
+  height: 61px;
+  background-position: 172px 104px;
+}
+#TINY .shopRankNumber_7 {
+  width: 11px;
+  height: 40px;
+  background-position: 204px 41px;
+}
+
+.shopRankNumber_8 {
+  margin: 0 auto;
+  background-image: url("/images/icon.svg");
+  width: 15px;
+  height: 61px;
+  background-position: 154px 104px;
+}
+#TINY .shopRankNumber_8 {
+  width: 11px;
+  height: 40px;
+  background-position: 192px 41px;
+}
+
+.shopRankNumber_9 {
+  margin: 0 auto;
+  background-image: url("/images/icon.svg");
+  width: 17px;
+  height: 77px;
+  background-position: 138px 104px;
+}
+#TINY .shopRankNumber_9 {
+  width: 11px;
+  height: 40px;
+  background-position: 182px 41px;
+}
