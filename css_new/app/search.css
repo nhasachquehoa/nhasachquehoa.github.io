@@ -1,0 +1,90 @@
+#searchForm {
+    margin-right: 30px;
+    position: relative;
+}
+
+#searchInput {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 4px 22px 4px 4px;
+    width: 120px;
+}
+
+#searchMagnifier {
+    background: url('/images/icon.svg') no-repeat -56px -71px;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    right: 4px;
+    top: 16px;
+}
+
+#searchResults h1 {
+    font-size: 36px;
+    margin: 30px 0 0 25px;
+}
+
+#cse {
+    padding: 10px;
+}
+
+#cse .gsc-control-cse,
+#cse .gsc-control-cse .gsc-table-result {
+    font-family: SFUTradeGothic, Arial, sans-serif;
+}
+
+#cse .gsc-input-box {
+    height: auto;
+}
+
+#cse img.gs-image {
+    border: 8px solid #fff;
+    outline: 1px solid #e9e9e9;
+}
+
+#cse .gs-image-box.gs-web-image-box {
+    height: auto;
+    overflow: visible;
+    width: 80px;
+}
+
+#cse .gs-image-box.gs-web-image-box.gs-web-image-box-landscape {
+    width: 100px;
+}
+
+#cse .gsc-cursor-page {
+    border: 1px solid #8a8a8a;
+    border-radius: 20px;
+    color: #666;
+    display: block;
+    float: left;
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 5px;
+    text-align: center;
+    width: 32px;
+}
+
+#cse .gsc-cursor-page:hover {
+    background: #f40;
+    border-color: #f40;
+    color: #fff;
+    text-decoration: none;
+}
+
+#cse .gsc-cursor-current-page {
+    background: #1d4675;
+    border-color: #1d4675;
+    color: #fff;
+}
+
+#cse .gs-result .gs-visibleUrl {
+    color: #1d4675;
+}
+
+#cse .gs-result .gs-title,
+#cse .gs-result .gs-title b {
+    color: #f40;
+    text-decoration: none;
+}
