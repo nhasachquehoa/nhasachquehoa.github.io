@@ -1,0 +1,54 @@
+.shareButtons {
+    border-top: 1px solid #9dafc2;
+    margin-top: 25px;
+}
+
+.shareButtons h4 {
+    background: #fff;
+    color: #1f4773;
+    font-size: 26px;
+    font-weight: normal;
+    padding: 0;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    top: -10px;
+    width: 230px;
+}
+
+.shareButtons ul {
+    list-style: none;
+    height: 82px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 380px;
+}
+
+
+.shareButtons li {
+    float: left;
+    text-align: center;
+    margin: 0 20px 0 0;
+    padding: 0;
+}
+
+.shareButtons .pinterest {
+    padding-top: 22px;
+}
+
+.facebookComments {
+    width: 100%;
+    display: none !important;
+}
+
+.fb-comments, .fb-comments span, .fb-comments iframe[style] {width: 100% !important;}
+
+
+#TINY .shareButtons .container {
+    width: 300px;
+}
+
+#TINY .shareButtons li {
+    margin-right: 5px;
+}
